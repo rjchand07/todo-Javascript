@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2e9eb;
+    color: #dd8ea4;
+    font-family:"Poppins", san-sherif;
+    min-height: 100vh;
+}
+header{
+    font-size: 1.5rem;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    background: white;
+    font-size: 1rem;
+    border: none;
+}
+
+form button{
+    cursor: pointer;
+    color: #2b262d;
+    transition: 0.3s ease;
+    background: white;
+}
+form button:hover{
+    color: white;
+    background: #2b262d;
+}
+
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-list{
+    list-style: none;
+    min-width: 20%;
+}
+
+.todo{
+    margin: 00.5rem;
+    background: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.completed-btn, .trash-btn{
+ 
+    background: #ff6f47;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+
+}
+
+.completed-btn{
+    background: rgb(164, 233, 164);
+}
+.completed-btn:hover{
+    background: white;
+    color: rgb(164, 233, 164);
+}
+
+.trash-btn{
+    background: rgb(241, 155, 155);
+}
+.trash-btn:hover{
+    background: white;
+    color: rgb(241, 155, 155);
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+
+}
+
+select{
+    color: #31383f;
+    width: 10rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.select::after{
+    position: absolute;
+    background: #2b262d;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    pointer-events: none;
+}
